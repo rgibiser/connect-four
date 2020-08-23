@@ -41,11 +41,11 @@ export default {
             if (action === 'create') {
                 let id = uuidv1().substr(0,8)
                 this.$router.push({ name: 'game', params: {gameID: id} })
-                setTimeout(() => bus.$emit('hostName', this.name), 150)
+                setTimeout(() => bus.$emit('hostName', this.name), 300)
             }
             else if (action === 'join') {
                 this.$router.push({ name: 'game', params: {gameID: this.room} })
-                setTimeout(() => bus.$emit('guestName', this.name), 150)
+                setTimeout(() => bus.$emit('guestName', this.name), 300)
             }
         }
     }

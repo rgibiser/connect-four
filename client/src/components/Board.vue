@@ -84,6 +84,7 @@ export default {
 header {
     text-align: center;
     padding-top: 20px;
+    height: 94px;
 }
 
 h1 {
